@@ -13,6 +13,7 @@
 		1EBC2CB9222CFB6C007EA798 /* NewMyApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EBC2CB7222CFB6C007EA798 /* NewMyApp.xcdatamodeld */; };
 		1EBC2CBB222CFB6E007EA798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EBC2CBA222CFB6E007EA798 /* Assets.xcassets */; };
 		1EBC2CBE222CFB6E007EA798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EBC2CBC222CFB6E007EA798 /* LaunchScreen.storyboard */; };
+		1EBC2CC6222DA282007EA798 /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBC2CC5222DA282007EA798 /* SectionCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1EBC2CBA222CFB6E007EA798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EBC2CBD222CFB6E007EA798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EBC2CBF222CFB6F007EA798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EBC2CC5222DA282007EA798 /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1EBC2CBC222CFB6E007EA798 /* LaunchScreen.storyboard */,
 				1EBC2CBF222CFB6F007EA798 /* Info.plist */,
 				1EBC2CB7222CFB6C007EA798 /* NewMyApp.xcdatamodeld */,
+				1EBC2CC5222DA282007EA798 /* SectionCollectionViewCell.swift */,
 			);
 			path = NewMyApp;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				1EBC2CB9222CFB6C007EA798 /* NewMyApp.xcdatamodeld in Sources */,
 				1EBC2CB3222CFB6C007EA798 /* ViewController.swift in Sources */,
+				1EBC2CC6222DA282007EA798 /* SectionCollectionViewCell.swift in Sources */,
 				1EBC2CB1222CFB6C007EA798 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

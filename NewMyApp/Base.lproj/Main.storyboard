@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NewMyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1792"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1276"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="B2f-0x-ZRa">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1792"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1276"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0vb-hh-QSW">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1276"/>
@@ -143,7 +143,7 @@
                                                             <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionCell" id="Wt4-D8-F86">
+                                                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionCell" id="Wt4-D8-F86" customClass="SectionCollectionViewCell" customModule="NewMyApp" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="0.0" width="304" height="248"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -165,8 +165,8 @@
                                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A little bit about me" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RiM-yw-jqc">
-                                                                                            <rect key="frame" x="20" y="203" width="163.5" height="25"/>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A little bit about me" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RiM-yw-jqc">
+                                                                                            <rect key="frame" x="20" y="203" width="264" height="25"/>
                                                                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                             <nil key="highlightedColor"/>
@@ -177,6 +177,7 @@
                                                                                         <constraint firstItem="Rge-TN-ZHJ" firstAttribute="leading" secondItem="7AA-dQ-DRH" secondAttribute="leading" constant="20" id="2Ov-if-JhQ"/>
                                                                                         <constraint firstAttribute="trailing" secondItem="Rge-TN-ZHJ" secondAttribute="trailing" constant="20" id="2fn-QV-qdU"/>
                                                                                         <constraint firstAttribute="trailing" secondItem="3SW-z1-Epz" secondAttribute="trailing" id="9WU-Jf-5Nb"/>
+                                                                                        <constraint firstAttribute="trailing" secondItem="RiM-yw-jqc" secondAttribute="trailing" constant="20" id="BIO-J8-Zfq"/>
                                                                                         <constraint firstItem="Rge-TN-ZHJ" firstAttribute="top" secondItem="7AA-dQ-DRH" secondAttribute="top" constant="20" id="H7v-od-QZK"/>
                                                                                         <constraint firstAttribute="bottom" secondItem="RiM-yw-jqc" secondAttribute="bottom" constant="20" id="Hlr-6L-gZp"/>
                                                                                         <constraint firstAttribute="bottom" secondItem="3SW-z1-Epz" secondAttribute="bottom" id="NN6-xp-tTp"/>
@@ -222,6 +223,11 @@
                                                                     <constraint firstItem="07b-Tf-dNe" firstAttribute="top" secondItem="Wt4-D8-F86" secondAttribute="top" id="eqL-5Z-Act"/>
                                                                 </constraints>
                                                                 <size key="customSize" width="304" height="248"/>
+                                                                <connections>
+                                                                    <outlet property="cellCaptionLbl" destination="RiM-yw-jqc" id="3Xd-Hv-6SW"/>
+                                                                    <outlet property="cellTitleLbl" destination="Rge-TN-ZHJ" id="9zc-gz-7AS"/>
+                                                                    <outlet property="coverImageView" destination="3SW-z1-Epz" id="a40-10-04g"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -276,7 +282,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xqq-Kx-QSw"/>
                     </view>
-                    <size key="freeformSize" width="414" height="1792"/>
+                    <size key="freeformSize" width="414" height="1276"/>
                     <connections>
                         <outlet property="backgroundImage" destination="AVJ-ex-FHm" id="sct-YB-D6c"/>
                         <outlet property="cardCollectionView" destination="1f9-he-2nA" id="tzo-et-cXb"/>

@@ -37,10 +37,10 @@ class FourthSectionViewController: UIViewController {
         captionLbl.text = caption
         
         let animationView = LOTAnimationView(name: "1607-computer-display")
-        animationView.frame = CGRect(x: 80, y: 150, width: 350, height: 350)
+        animationView.frame = CGRect(x: animationViewContainer.bounds.midX/2, y: animationViewContainer.bounds.midY/2, width: animationViewContainer.bounds.width/2, height: animationViewContainer.bounds.height/2)
         animationView.contentMode = .scaleAspectFit
-        //animationView.loopAnimation = true
-        animationView.animationSpeed = 0.5
+        animationView.loopAnimation = true
+        animationView.animationSpeed = 0.6
         animationViewContainer.addSubview(animationView)
         
         animationView.play()
@@ -51,24 +51,24 @@ class FourthSectionViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-//    
-//    @IBAction func linkedInProfileBtnTapped(_ sender: Any) {
-//        guard let url = URL(string: "https://www.linkedin.com/in/sabri-umut-s%C3%B6nmez-034025180/") else { return }
-//        UIApplication.shared.open(url)
-//    }
-//    
-//    @IBAction func emailBtnPressed(_ sender: Any) {
-//        let email = "sabri.sonmez@macaulay.cuny.edu"
-//        if let url = URL(string: "mailto:\(email)") {
-//            if #available(iOS 10.0, *) {
-//                UIApplication.shared.open(url)
-//            } else {
-//                UIApplication.shared.openURL(url)
-//            }
-//        }
-//    }
-//    
-//    @IBAction func messageBtnPressed(_ sender: Any) {
-//        UIApplication.shared.open(URL(string: "sms:+13472183015")!, options: [:], completionHandler: nil)
-//    }
+
+    @IBAction func linkedInProfileBtnTapped(_ sender: Any) {
+        guard let url = URL(string: "https://www.linkedin.com/in/sabri-umut-s%C3%B6nmez-034025180/") else { return }
+        UIApplication.shared.open(url)
+    }
+
+    @IBAction func emailBtnPressed(_ sender: Any) {
+        let email = "sabri.sonmez@macaulay.cuny.edu"
+        if let url = URL(string: "mailto:\(email)") {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
+    }
+    
+    @IBAction func messageBtnPressed(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "sms:+13472183015")!, options: [:], completionHandler: nil)
+    }
 }

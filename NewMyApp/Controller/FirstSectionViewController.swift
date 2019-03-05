@@ -43,7 +43,7 @@ class FirstSectionViewController: UIViewController {
         bodyLbl.text = body
         
         let animationView = LOTAnimationView(name: "4583-mine")
-        animationView.frame = CGRect(x: 80, y: 150, width: 256, height: 200)
+        animationView.frame = CGRect(x: animationContainerView.bounds.midX/2, y: animationContainerView.bounds.midY/2, width: animationContainerView.bounds.width/2, height: animationContainerView.bounds.height/2)
         animationView.contentMode = .scaleAspectFit
         //animationView.loopAnimation = true
         animationView.animationSpeed = 0.7

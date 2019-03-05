@@ -30,8 +30,8 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="626084" translatesAutoresizingMaskIntoConstraints="NO" id="AVJ-ex-FHm">
                                                         <rect key="frame" x="0.0" y="-50" width="414" height="731"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is my App" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vs-EP-kQh">
-                                                        <rect key="frame" x="20" y="85" width="414" height="50"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is my App" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vs-EP-kQh">
+                                                        <rect key="frame" x="20" y="85" width="279" height="49.5"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -294,8 +294,8 @@
                         <outlet property="titleLbl" destination="9Vs-EP-kQh" id="K9j-Xd-4F8"/>
                         <segue destination="kui-Zv-CyB" kind="presentation" identifier="HomeToSection1" id="30v-Y7-P9C"/>
                         <segue destination="imd-3L-7D0" kind="presentation" identifier="HomeToSection2" id="0sl-ku-3me"/>
-                        <segue destination="rTc-qV-b02" kind="show" identifier="HomeToSection3" id="l2c-jB-Ova"/>
-                        <segue destination="b0K-4m-zD5" kind="show" identifier="HomeToSection4" id="8Qz-g7-bi8"/>
+                        <segue destination="rTc-qV-b02" kind="presentation" identifier="HomeToSection3" id="l2c-jB-Ova"/>
+                        <segue destination="b0K-4m-zD5" kind="presentation" identifier="HomeToSection4" id="8Qz-g7-bi8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -522,7 +522,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3s-js-jR9">
                                                 <rect key="frame" x="20" y="580" width="374" height="30"/>
                                                 <color key="backgroundColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Click button to open GitHub Link">
+                                                <state key="normal" title="View my GitHub page">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -720,8 +720,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zh-N8-CaX">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RQz-Tx-LzR" userLabel="ContentView2">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQz-Tx-LzR" userLabel="ContentView2">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMz-hG-rSW">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="420"/>
@@ -735,8 +735,8 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="My linked in profile and other ways to get in touch" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-2C-vjX">
-                                                        <rect key="frame" x="20" y="351.5" width="374" height="38.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="My linked in profile and other ways to get in touch" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-2C-vjX">
+                                                        <rect key="frame" x="20" y="325" width="374" height="65"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -788,13 +788,97 @@
                                                     <constraint firstAttribute="height" constant="420" id="hIS-1j-Wvq"/>
                                                     <constraint firstItem="B3L-fw-rGl" firstAttribute="top" secondItem="aMz-hG-rSW" secondAttribute="top" id="m2H-2h-bfn"/>
                                                     <constraint firstItem="B3L-fw-rGl" firstAttribute="leading" secondItem="aMz-hG-rSW" secondAttribute="leading" id="se4-3t-Ziq"/>
-                                                    <constraint firstItem="hf6-2C-vjX" firstAttribute="top" secondItem="2xl-Ey-b2g" secondAttribute="bottom" constant="216.5" id="tP9-iI-uFC"/>
+                                                    <constraint firstItem="hf6-2C-vjX" firstAttribute="top" secondItem="2xl-Ey-b2g" secondAttribute="bottom" constant="190" id="tP9-iI-uFC"/>
                                                     <constraint firstItem="2xl-Ey-b2g" firstAttribute="top" secondItem="aMz-hG-rSW" secondAttribute="top" constant="80" id="wWr-5K-DSt"/>
                                                 </constraints>
                                             </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="22o-zG-g4v">
+                                                <rect key="frame" x="20" y="500" width="374" height="164"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfS-pv-shq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                                        <color key="backgroundColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="View myLinkedIn page">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                <real key="value" value="0.25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                <size key="value" width="0.0" height="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="linkedInProfileBtnTapped:" destination="b0K-4m-zD5" eventType="touchUpInside" id="TZP-O0-k4c"/>
+                                                            <action selector="urlButtonPressed:" destination="imd-3L-7D0" eventType="touchUpInside" id="hNl-9g-AL8"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPn-dP-Eh7">
+                                                        <rect key="frame" x="0.0" y="67" width="374" height="30"/>
+                                                        <color key="backgroundColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Email me">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                <real key="value" value="0.25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                <size key="value" width="0.0" height="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="emailBtnPressed:" destination="b0K-4m-zD5" eventType="touchUpInside" id="7Xh-rA-ZxV"/>
+                                                            <action selector="urlButtonPressed:" destination="imd-3L-7D0" eventType="touchUpInside" id="zcg-Um-mIA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZe-Wg-pte">
+                                                        <rect key="frame" x="0.0" y="134" width="374" height="30"/>
+                                                        <color key="backgroundColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Message me">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                <real key="value" value="0.25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                <size key="value" width="0.0" height="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="messageBtnPressed:" destination="b0K-4m-zD5" eventType="touchUpInside" id="vxC-FC-zeW"/>
+                                                            <action selector="urlButtonPressed:" destination="imd-3L-7D0" eventType="touchUpInside" id="tXg-Uj-p3q"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="22o-zG-g4v" firstAttribute="leading" secondItem="RQz-Tx-LzR" secondAttribute="leading" constant="20" id="9qZ-Mp-Mkd"/>
+                                            <constraint firstItem="22o-zG-g4v" firstAttribute="top" secondItem="aMz-hG-rSW" secondAttribute="bottom" constant="80" id="bh8-Tx-yAc"/>
+                                            <constraint firstItem="22o-zG-g4v" firstAttribute="centerX" secondItem="RQz-Tx-LzR" secondAttribute="centerX" id="hzr-dz-JVq"/>
+                                            <constraint firstAttribute="trailing" secondItem="22o-zG-g4v" secondAttribute="trailing" constant="20" id="ils-Li-r4I"/>
                                             <constraint firstItem="aMz-hG-rSW" firstAttribute="top" secondItem="RQz-Tx-LzR" secondAttribute="top" id="lBH-rN-JGL"/>
                                             <constraint firstItem="aMz-hG-rSW" firstAttribute="leading" secondItem="RQz-Tx-LzR" secondAttribute="leading" id="okK-dg-jBR"/>
                                             <constraint firstAttribute="bottom" secondItem="aMz-hG-rSW" secondAttribute="bottom" constant="476" id="qIk-h3-S9J"/>

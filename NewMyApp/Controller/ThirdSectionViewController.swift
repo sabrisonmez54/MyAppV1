@@ -26,7 +26,8 @@ class ThirdSectionViewController: UIViewController {
         titleLbl.text = Title
         bodyLbl.text = body
         let animationView = LOTAnimationView(name: "profile")
-        animationView.frame = CGRect(x: 80, y: 250, width: 200, height: 150)
+    
+        animationView.frame = CGRect(x: animationContainerView.bounds.midX/2, y: animationContainerView.bounds.midY, width: animationContainerView.bounds.width/2, height: animationContainerView.bounds.height/2)
         animationView.contentMode = .scaleAspectFit
         animationView.animationSpeed = 2
         animationView.loopAnimation = true

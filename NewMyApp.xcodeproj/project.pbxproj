@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E5EF76E222F0FC1007FA6C8 /* 3046-me-at-office.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E5EF76D222F0FC0007FA6C8 /* 3046-me-at-office.json */; };
 		1EBC2CB1222CFB6C007EA798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBC2CB0222CFB6C007EA798 /* AppDelegate.swift */; };
 		1EBC2CB3222CFB6C007EA798 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBC2CB2222CFB6C007EA798 /* ViewController.swift */; };
 		1EBC2CB6222CFB6C007EA798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EBC2CB4222CFB6C007EA798 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E5EF76D222F0FC0007FA6C8 /* 3046-me-at-office.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3046-me-at-office.json"; sourceTree = "<group>"; };
 		1EBC2CAD222CFB6C007EA798 /* NewMyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewMyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EBC2CB0222CFB6C007EA798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EBC2CB2222CFB6C007EA798 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				1EBC2CD5222E1127007EA798 /* 3179-code-icon.json */,
 				1EBC2CD9222EC5DF007EA798 /* 1607-computer-display.json */,
 				1EBC2CDD222EF67A007EA798 /* profile.json */,
+				1E5EF76D222F0FC0007FA6C8 /* 3046-me-at-office.json */,
 				1EBC2CC7222DF36D007EA798 /* Controller */,
 				1EBC2CB0222CFB6C007EA798 /* AppDelegate.swift */,
 				1EBC2CB4222CFB6C007EA798 /* Main.storyboard */,
@@ -191,6 +194,7 @@
 				1EBC2CD6222E1127007EA798 /* 3179-code-icon.json in Resources */,
 				1EBC2CBE222CFB6E007EA798 /* LaunchScreen.storyboard in Resources */,
 				1EBC2CBB222CFB6E007EA798 /* Assets.xcassets in Resources */,
+				1E5EF76E222F0FC1007FA6C8 /* 3046-me-at-office.json in Resources */,
 				1EBC2CDE222EF67A007EA798 /* profile.json in Resources */,
 				1EBC2CB6222CFB6C007EA798 /* Main.storyboard in Resources */,
 			);
@@ -398,6 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NewMyApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -416,6 +421,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NewMyApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

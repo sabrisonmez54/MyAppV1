@@ -36,11 +36,11 @@ class FourthSectionViewController: UIViewController {
         titleLbl.text = Title
         captionLbl.text = caption
         
-        let animationView = LOTAnimationView(name: "1607-computer-display")
+        let animationView = LOTAnimationView(name: "3046-me-at-office")
         animationView.frame = CGRect(x: animationViewContainer.bounds.midX/2, y: animationViewContainer.bounds.midY/2, width: animationViewContainer.bounds.width/2, height: animationViewContainer.bounds.height/2)
         animationView.contentMode = .scaleAspectFit
         animationView.loopAnimation = true
-        animationView.animationSpeed = 0.6
+       // animationView.animationSpeed = 0.5
         animationViewContainer.addSubview(animationView)
         
         animationView.play()

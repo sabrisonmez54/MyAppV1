@@ -17,19 +17,8 @@ class SecondSectionViewController: UIViewController {
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var animationContainerView: UIView!
     
-    
     var Title = "My GitHub"
     var caption = "This is where I upload all my projects"
-    
-    public var screenWidth: CGFloat {
-        return UIScreen.main.bounds.width
-    }
-    
-    // Screen height.
-    public var screenHeight: CGFloat {
-        return UIScreen.main.bounds.height
-    }
-    
  
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,10 +34,8 @@ class SecondSectionViewController: UIViewController {
         
         animationView.play()
         
-      // let url = URL(string: "https://github.com/sabrisonmez54")
-      // let request = URLRequest(url: url!)
-        
-       
+         // let url = URL(string: "https://github.com/sabrisonmez54")
+        // let request = URLRequest(url: url!)
        // webViewOutlet.load(request)
         
     }
@@ -61,5 +48,4 @@ class SecondSectionViewController: UIViewController {
         guard let url = URL(string: "https://github.com/sabrisonmez54") else { return }
         UIApplication.shared.open(url)
     }
-    
 }

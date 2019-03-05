@@ -13,7 +13,6 @@ class ThirdSectionViewController: UIViewController {
 
     @IBOutlet weak var animationContainerView: UIView!
     @IBOutlet weak var titleLbl: UILabel!
-
     @IBOutlet weak var bodyLbl: UILabel!
     
     var Title = "My Resume"
@@ -35,14 +34,9 @@ class ThirdSectionViewController: UIViewController {
         animationContainerView.addSubview(animationView)
         
         animationView.play()
-        
-        
     }
     
-
     @IBAction func closeBtnTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
-
 }

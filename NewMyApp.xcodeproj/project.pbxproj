@@ -62,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E5EF76F222F13AA007FA6C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1EBC2CC5222DA282007EA798 /* SectionCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1EBC2CA4222CFB6C007EA798 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +91,7 @@
 		1EBC2CAF222CFB6C007EA798 /* NewMyApp */ = {
 			isa = PBXGroup;
 			children = (
+				1E5EF76F222F13AA007FA6C8 /* View */,
 				1EBC2CCF222E003B007EA798 /* 4583-mine.json */,
 				1EBC2CD5222E1127007EA798 /* 3179-code-icon.json */,
 				1EBC2CD9222EC5DF007EA798 /* 1607-computer-display.json */,
@@ -95,7 +104,6 @@
 				1EBC2CBC222CFB6E007EA798 /* LaunchScreen.storyboard */,
 				1EBC2CBF222CFB6F007EA798 /* Info.plist */,
 				1EBC2CB7222CFB6C007EA798 /* NewMyApp.xcdatamodeld */,
-				1EBC2CC5222DA282007EA798 /* SectionCollectionViewCell.swift */,
 			);
 			path = NewMyApp;
 			sourceTree = "<group>";

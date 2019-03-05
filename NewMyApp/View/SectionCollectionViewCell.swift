@@ -12,7 +12,4 @@ class SectionCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var coverImageView: UIImageView!
     @IBOutlet weak var cellCaptionLbl: UILabel!
     @IBOutlet weak var cellTitleLbl: UILabel!
-
-
-
 }

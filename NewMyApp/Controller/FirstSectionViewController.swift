@@ -20,16 +20,7 @@ class FirstSectionViewController: UIViewController {
     
     var Title = "My Profile"
     var caption = "a little bit about me"
-    var body = "I am computer science student at Macaulay Honors College at Lehman(CUNY). "
-   
-    public var screenWidth: CGFloat {
-        return UIScreen.main.bounds.width
-    }
-    
-    // Screen height.
-    public var screenHeight: CGFloat {
-        return UIScreen.main.bounds.height
-    }
+    var body = "I am computer science student at Macaulay Honors College at Lehman(CUNY)."
 
     @IBAction func closeButtonTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)

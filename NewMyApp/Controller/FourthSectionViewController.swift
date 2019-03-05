@@ -12,23 +12,12 @@ import Lottie
 class FourthSectionViewController: UIViewController {
 
     //Outlets
-    
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var captionLbl: UILabel!
     @IBOutlet weak var animationViewContainer: UIView!
     
     var Title = "Linkedin and more"
     var caption = "My Linkedin profile and other ways to get in touch with me"
-   
-    //Screen width.
-    public var screenWidth: CGFloat {
-        return UIScreen.main.bounds.width
-    }
-    
-    // Screen height.
-    public var screenHeight: CGFloat {
-        return UIScreen.main.bounds.height
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,11 +35,9 @@ class FourthSectionViewController: UIViewController {
         animationView.play()
     }
     
-   
     @IBAction func closeBtnTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
 
     @IBAction func linkedInProfileBtnTapped(_ sender: Any) {
         guard let url = URL(string: "https://www.linkedin.com/in/sabri-umut-s%C3%B6nmez-034025180/") else { return }

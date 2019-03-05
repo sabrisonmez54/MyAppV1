@@ -418,8 +418,10 @@
                             <constraint firstAttribute="bottom" secondItem="JYZ-t3-XCy" secondAttribute="bottom" id="j88-cc-faw"/>
                             <constraint firstItem="JYZ-t3-XCy" firstAttribute="leading" secondItem="lC0-8g-1V0" secondAttribute="leading" id="kCg-4c-bca"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="RC7-8l-lT7"/>
                     </view>
                     <connections>
+                        <outlet property="animationContainerView" destination="cj0-Bu-ZcM" id="wqF-b7-bOj"/>
                         <outlet property="bodyLbl" destination="0zj-DF-5ew" id="tax-9t-Cl9"/>
                         <outlet property="captionLbl" destination="UEA-hl-hB9" id="3RO-hX-RkM"/>
                         <outlet property="coverImageView" destination="8zt-Pl-R7r" id="Adt-Vj-nIu"/>

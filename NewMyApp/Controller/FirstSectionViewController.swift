@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Lottie
 
 class FirstSectionViewController: UIViewController {
 
@@ -14,6 +15,8 @@ class FirstSectionViewController: UIViewController {
     @IBOutlet weak var captionLbl: UILabel!
     @IBOutlet weak var coverImageView: UIImageView!
     @IBOutlet weak var bodyLbl: UILabel!
+    @IBOutlet weak var animationContainerView: UIView!
+    
     
     var Title = "My Profile"
     var caption = "a little bit about me"
@@ -30,6 +33,15 @@ class FirstSectionViewController: UIViewController {
         captionLbl.text = caption
         bodyLbl.text = body
        
+        
+        let animationView = LOTAnimationView(name: "4583-mine")
+        animationView.frame = CGRect(x: 79, y: 150, width: 256, height: 200)
+        animationView.contentMode = .scaleAspectFit
+        //animationView.loopAnimation = true
+        animationView.animationSpeed = 0.7
+        animationContainerView.addSubview(animationView)
+        
+        animationView.play()
         
     }
     

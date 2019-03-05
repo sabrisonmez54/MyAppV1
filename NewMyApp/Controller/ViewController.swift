@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    //Outlets
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var contentView: UIView!
@@ -18,8 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var cardCollectionView: UICollectionView!
     
-    var titles = ["Profile","GitHub","Resume","Linkedin"]
-    var captions = ["A little bit about me.","This is my GitHub account where I upload all my projects.","Here lies my resume","My Linkedin profile "]
+    var titles = ["Profile","GitHub","Resume","Linkedin and more"]
+    var captions = ["A little bit about me.","This is my GitHub account where I upload all my projects.","Here lies my resume","My Linkedin profile and other ways to get in touch with me"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +62,12 @@ extension ViewController : UICollectionViewDelegate , UICollectionViewDataSource
         if indexPath.row == 1{
             performSegue(withIdentifier: "HomeToSection2", sender: nil)
         }
+        if indexPath.row == 2{
+            performSegue(withIdentifier: "HomeToSection3", sender: nil)
+        }
+        if indexPath.row == 3{
+            performSegue(withIdentifier: "HomeToSection4", sender: nil)
+        }
     }
 }
 
@@ -92,7 +99,5 @@ extension ViewController : UIScrollViewDelegate{
             }
         }
     }
-    
-    
 }
 

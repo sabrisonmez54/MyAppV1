@@ -8,25 +8,36 @@
 
 import UIKit
 import Lottie
-import WebKit
+
 
 class SecondSectionViewController: UIViewController {
 
+    //Outlets
     @IBOutlet weak var captionLbl: UILabel!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var animationContainerView: UIView!
-    @IBOutlet weak var webViewOutlet: WKWebView!
+    
     
     var Title = "My GitHub"
     var caption = "This is where I upload all my projects"
     
+    public var screenWidth: CGFloat {
+        return UIScreen.main.bounds.width
+    }
+    
+    // Screen height.
+    public var screenHeight: CGFloat {
+        return UIScreen.main.bounds.height
+    }
+    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLbl.text = Title
         captionLbl.text = caption
        
         let animationView = LOTAnimationView(name: "3179-code-icon")
-        animationView.frame = CGRect(x: 79, y: 150, width: 250, height: 150)
+        animationView.frame = CGRect(x: 80, y: 150, width: 250, height: 150)
         animationView.contentMode = .scaleAspectFit
         //animationView.loopAnimation = true
        
@@ -34,15 +45,21 @@ class SecondSectionViewController: UIViewController {
         
         animationView.play()
         
-       let url = URL(string: "https://github.com/sabrisonmez54")
-       let request = URLRequest(url: url!)
+      // let url = URL(string: "https://github.com/sabrisonmez54")
+      // let request = URLRequest(url: url!)
         
-        webViewOutlet.load(request)
+       
+       // webViewOutlet.load(request)
+        
     }
     
     @IBAction func closeButtonTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
-
+    @IBAction func urlButtonPressed(_ sender: Any) {
+        guard let url = URL(string: "https://github.com/sabrisonmez54") else { return }
+        UIApplication.shared.open(url)
+    }
+    
 }

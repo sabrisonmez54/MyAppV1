@@ -16,6 +16,8 @@
 		1EBC2CC6222DA282007EA798 /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBC2CC5222DA282007EA798 /* SectionCollectionViewCell.swift */; };
 		1EBC2CC9222DF38E007EA798 /* FirstSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBC2CC8222DF38E007EA798 /* FirstSectionViewController.swift */; };
 		1EBC2CD0222E003B007EA798 /* 4583-mine.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EBC2CCF222E003B007EA798 /* 4583-mine.json */; };
+		1EBC2CD2222E0DB0007EA798 /* SecondSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBC2CD1222E0DB0007EA798 /* SecondSectionViewController.swift */; };
+		1EBC2CD6222E1127007EA798 /* 3179-code-icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EBC2CD5222E1127007EA798 /* 3179-code-icon.json */; };
 		ADE7680305AD143CDDD43E81 /* Pods_NewMyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF32DBE108F9862645D0E74E /* Pods_NewMyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		1EBC2CC5222DA282007EA798 /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		1EBC2CC8222DF38E007EA798 /* FirstSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSectionViewController.swift; sourceTree = "<group>"; };
 		1EBC2CCF222E003B007EA798 /* 4583-mine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4583-mine.json"; sourceTree = "<group>"; };
+		1EBC2CD1222E0DB0007EA798 /* SecondSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSectionViewController.swift; sourceTree = "<group>"; };
+		1EBC2CD5222E1127007EA798 /* 3179-code-icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3179-code-icon.json"; sourceTree = "<group>"; };
 		872029F474D099829A597E0A /* Pods-NewMyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewMyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewMyApp/Pods-NewMyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BF32DBE108F9862645D0E74E /* Pods_NewMyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewMyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D702C2445E6E212C32B8521A /* Pods-NewMyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewMyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewMyApp/Pods-NewMyApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				1EBC2CCF222E003B007EA798 /* 4583-mine.json */,
+				1EBC2CD5222E1127007EA798 /* 3179-code-icon.json */,
 				1EBC2CC7222DF36D007EA798 /* Controller */,
 				1EBC2CB0222CFB6C007EA798 /* AppDelegate.swift */,
 				1EBC2CB4222CFB6C007EA798 /* Main.storyboard */,
@@ -87,6 +92,7 @@
 			children = (
 				1EBC2CB2222CFB6C007EA798 /* ViewController.swift */,
 				1EBC2CC8222DF38E007EA798 /* FirstSectionViewController.swift */,
+				1EBC2CD1222E0DB0007EA798 /* SecondSectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -169,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EBC2CD0222E003B007EA798 /* 4583-mine.json in Resources */,
+				1EBC2CD6222E1127007EA798 /* 3179-code-icon.json in Resources */,
 				1EBC2CBE222CFB6E007EA798 /* LaunchScreen.storyboard in Resources */,
 				1EBC2CBB222CFB6E007EA798 /* Assets.xcassets in Resources */,
 				1EBC2CB6222CFB6C007EA798 /* Main.storyboard in Resources */,
@@ -221,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EBC2CD2222E0DB0007EA798 /* SecondSectionViewController.swift in Sources */,
 				1EBC2CB9222CFB6C007EA798 /* NewMyApp.xcdatamodeld in Sources */,
 				1EBC2CC9222DF38E007EA798 /* FirstSectionViewController.swift in Sources */,
 				1EBC2CB3222CFB6C007EA798 /* ViewController.swift in Sources */,

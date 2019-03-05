@@ -58,7 +58,9 @@ extension ViewController : UICollectionViewDelegate , UICollectionViewDataSource
         if indexPath.row == 0{
              performSegue(withIdentifier: "HomeToSection1", sender: nil)
         }
-       
+        if indexPath.row == 1{
+            performSegue(withIdentifier: "HomeToSection2", sender: nil)
+        }
     }
 }
 

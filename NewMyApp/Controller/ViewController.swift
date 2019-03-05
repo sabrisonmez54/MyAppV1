@@ -53,6 +53,13 @@ extension ViewController : UICollectionViewDelegate , UICollectionViewDataSource
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row == 0{
+             performSegue(withIdentifier: "HomeToSection1", sender: nil)
+        }
+       
+    }
 }
 
 extension ViewController : UIScrollViewDelegate{

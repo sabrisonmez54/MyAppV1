@@ -1,4 +1,7 @@
 # MyAppV1
+
+*/still in development*/
+
 Just like having an own website, I made my own ios app.
 
 App includes Lottie animations, scroll paralax affects, and assets taken from google.

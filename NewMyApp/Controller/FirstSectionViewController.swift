@@ -12,6 +12,7 @@ import Lottie
 class FirstSectionViewController: UIViewController {
     
     //Outlets
+    @IBOutlet var myView: UIView!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var captionLbl: UILabel!
     @IBOutlet weak var coverImageView: UIImageView!
@@ -20,7 +21,7 @@ class FirstSectionViewController: UIViewController {
     
     var Title = "My Profile"
     var caption = "a little bit about me"
-    var body = "I am computer science student at Macaulay Honors College at Lehman(CUNY)."
+    var body = "I am computer science student at Macaulay Honors College at Lehman(CUNY)..."
 
     @IBAction func closeButtonTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -41,5 +42,14 @@ class FirstSectionViewController: UIViewController {
         animationContainerView.addSubview(animationView)
         
         animationView.play()
+        
+        let down = UISwipeGestureRecognizer(target : self, action : #selector(FirstSectionViewController.downSwipe))
+        down.direction = .down
+        self.animationContainerView.addGestureRecognizer(down)
+    }
+    
+    @objc
+    func downSwipe(){
+        dismiss(animated: true, completion: nil)
     }
 }

@@ -9,7 +9,6 @@
 import UIKit
 import Lottie
 
-
 class SecondSectionViewController: UIViewController {
 
     //Outlets
@@ -37,7 +36,14 @@ class SecondSectionViewController: UIViewController {
          // let url = URL(string: "https://github.com/sabrisonmez54")
         // let request = URLRequest(url: url!)
        // webViewOutlet.load(request)
-        
+        let down = UISwipeGestureRecognizer(target : self, action : #selector(FirstSectionViewController.downSwipe))
+        down.direction = .down
+        self.animationContainerView.addGestureRecognizer(down)
+    }
+    
+    @objc
+    func downSwipe(){
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func closeButtonTapped(_ sender: Any) {

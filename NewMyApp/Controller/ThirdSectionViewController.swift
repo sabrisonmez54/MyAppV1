@@ -11,6 +11,7 @@ import Lottie
 
 class ThirdSectionViewController: UIViewController {
 
+    //Outlets
     @IBOutlet weak var animationContainerView: UIView!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var bodyLbl: UILabel!
@@ -34,6 +35,15 @@ class ThirdSectionViewController: UIViewController {
         animationContainerView.addSubview(animationView)
         
         animationView.play()
+        
+        let down = UISwipeGestureRecognizer(target : self, action : #selector(FirstSectionViewController.downSwipe))
+        down.direction = .down
+        self.animationContainerView.addGestureRecognizer(down)
+    }
+    
+    @objc
+    func downSwipe(){
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func closeBtnTapped(_ sender: Any) {

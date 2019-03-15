@@ -33,6 +33,15 @@ class FourthSectionViewController: UIViewController {
         animationViewContainer.addSubview(animationView)
         
         animationView.play()
+        
+        let down = UISwipeGestureRecognizer(target : self, action : #selector(FirstSectionViewController.downSwipe))
+        down.direction = .down
+        self.animationViewContainer.addGestureRecognizer(down)
+    }
+    
+    @objc
+    func downSwipe(){
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func closeBtnTapped(_ sender: Any) {

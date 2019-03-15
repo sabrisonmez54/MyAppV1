@@ -1,4 +1,3 @@
-//
 //  ViewController.swift
 //  NewMyApp
 //
@@ -9,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     //Outlets
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
@@ -22,7 +22,10 @@ class ViewController: UIViewController {
     var titles = ["Profile","GitHub","Resume","Linkedin and more"]
     var captions = ["A little bit about me.","This is my GitHub account where I upload all my projects.","Here lies my resume","My Linkedin profile and other ways to get in touch with me"]
     
+    private var indexOfCellBeforeDragging = 0
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         cardCollectionView.delegate = self
@@ -36,12 +39,26 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 1){
             self.titleLbl.alpha = 1
         }
-        
+    }
+
+    @IBAction func emailMeBtnPressed(_ sender: Any) {
+        let email = "sabri.sonmez@macaulay.cuny.edu"
+        if let url = URL(string: "mailto:\(email)") {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
+    }
+    
+    @IBAction func textMeBtnPressed(_ sender: Any) {
+      UIApplication.shared.open(URL(string: "sms:+13472183015")!, options: [:], completionHandler: nil)
     }
 }
 
 extension ViewController : UICollectionViewDelegate , UICollectionViewDataSource {
-    
+  
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
@@ -69,6 +86,52 @@ extension ViewController : UICollectionViewDelegate , UICollectionViewDataSource
             performSegue(withIdentifier: "HomeToSection4", sender: nil)
         }
     }
+    
+//    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+//        let pageWidth = cardView.bounds.width
+//        let proportionalOffset = cardCollectionView.contentOffset.x / pageWidth
+//        indexOfCellBeforeDragging = Int(round(proportionalOffset))
+//    }
+//
+//    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+//
+//        // Stop scrolling
+//        targetContentOffset.pointee = scrollView.contentOffset
+//
+//        // Calculate conditions
+//        let pageWidth = cardView.bounds.width // The width your page should have (plus a possible margin)
+//        let collectionViewItemCount = 4
+//        let proportionalOffset = cardCollectionView.contentOffset.x / pageWidth
+//        let indexOfMajorCell = Int(round(proportionalOffset))
+//        let swipeVelocityThreshold: CGFloat = 0.5
+//        let hasEnoughVelocityToSlideToTheNextCell = indexOfCellBeforeDragging + 1 < collectionViewItemCount && velocity.x > swipeVelocityThreshold
+//        let hasEnoughVelocityToSlideToThePreviousCell = indexOfCellBeforeDragging - 1 >= 0 && velocity.x < -swipeVelocityThreshold
+//        let majorCellIsTheCellBeforeDragging = indexOfMajorCell == indexOfCellBeforeDragging
+//        let didUseSwipeToSkipCell = majorCellIsTheCellBeforeDragging && (hasEnoughVelocityToSlideToTheNextCell || hasEnoughVelocityToSlideToThePreviousCell)
+//
+//        if didUseSwipeToSkipCell {
+//            // Animate so that swipe is just continued
+//            let snapToIndex = indexOfCellBeforeDragging + (hasEnoughVelocityToSlideToTheNextCell ? 1 : -1)
+//            let toValue = pageWidth * CGFloat(snapToIndex) - 65
+//            UIView.animate(
+//                withDuration: 0.5,
+//                delay: 0,
+//                usingSpringWithDamping: 1,
+//                initialSpringVelocity: velocity.x,
+//                options: .allowUserInteraction,
+//                animations: {
+//                    scrollView.contentOffset = CGPoint(x: toValue, y: 0)
+//                    scrollView.layoutIfNeeded()
+//            },
+//                completion: nil
+//            )
+//        } else {
+//            // Pop back (against velocity)
+//            let indexPath = IndexPath(row: indexOfMajorCell, section: 0)
+//            cardCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+//        }
+//    }
+
 }
 
 extension ViewController : UIScrollViewDelegate{
@@ -76,11 +139,12 @@ extension ViewController : UIScrollViewDelegate{
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let OffsetY = scrollView.contentOffset.y
         
-        if OffsetY < 0{
+        if OffsetY < 0 {
             mainView.transform = CGAffineTransform(translationX: 0, y: OffsetY)
             titleLbl.transform = CGAffineTransform(translationX: 0, y: -OffsetY/4)
             backgroundImage.transform = CGAffineTransform(translationX: 0, y: -OffsetY/5)
         }
+        
         if let collectionView = scrollView as? UICollectionView {
             for cell in collectionView.visibleCells as! [SectionCollectionViewCell]{
                 let indexPath = collectionView.indexPath(for: cell)!

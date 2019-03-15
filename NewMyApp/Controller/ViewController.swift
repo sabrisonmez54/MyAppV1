@@ -86,7 +86,6 @@ extension ViewController : UICollectionViewDelegate , UICollectionViewDataSource
             performSegue(withIdentifier: "HomeToSection4", sender: nil)
         }
     }
-    
 //    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
 //        let pageWidth = cardView.bounds.width
 //        let proportionalOffset = cardCollectionView.contentOffset.x / pageWidth

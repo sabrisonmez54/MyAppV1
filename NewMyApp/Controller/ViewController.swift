@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var profileIconView: UIView!
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var cardCollectionView: UICollectionView!
+    @IBOutlet weak var headShotImg: UIImageView!
+    @IBOutlet weak var emailMeBtnOutlet: UIButton!
+    @IBOutlet weak var textMeBtnOutlet: UIButton!
     
     var titles = ["Profile","GitHub","Resume","Linkedin and more"]
     var captions = ["A little bit about me.","This is my GitHub account where I upload all my projects.","Here lies my resume","My Linkedin profile and other ways to get in touch with me"]
@@ -35,10 +38,19 @@ class ViewController: UIViewController {
         scrollView.delegate = self
         
         titleLbl.alpha = 0
-       
+        headShotImg.alpha = 0
+        emailMeBtnOutlet.alpha = 0
+        textMeBtnOutlet.alpha = 0
+        
         UIView.animate(withDuration: 1){
             self.titleLbl.alpha = 1
+            self.headShotImg.alpha = 1
+            self.emailMeBtnOutlet.alpha = 1
+            self.textMeBtnOutlet.alpha = 1
         }
+        
+      //  headShotImg.clipsToBounds = true
+       // headShotImg.layer.cornerRadius = headShotImg.frame.width / 2
     }
 
     @IBAction func emailMeBtnPressed(_ sender: Any) {
@@ -163,4 +175,3 @@ extension ViewController : UIScrollViewDelegate{
         }
     }
 }
-

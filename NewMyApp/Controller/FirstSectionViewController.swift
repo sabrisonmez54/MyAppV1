@@ -21,7 +21,7 @@ class FirstSectionViewController: UIViewController {
     
     var Title = "My Profile"
     var caption = "a little bit about me"
-    var body = "Hey! My name is Sabri and I'm a Software Engineer based in NYC. I am currently a sophmore pursuing  a Bachelors of Science in Computer Science at Macaulay Honors College at Lehman(CUNY). I am most interested in mobile development, and hence I have made this app to resemble making an own website."
+    var body = "Hey! My name is Sabri and I'm a Software Engineer based in NYC. I am currently a sophmore pursuing  a Bachelors of Science in Computer Science at Macaulay Honors College at Lehman(CUNY). I am most interested in mobile development, and hence I have made this app to resemble making an own website....."
 
     @IBAction func closeButtonTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)

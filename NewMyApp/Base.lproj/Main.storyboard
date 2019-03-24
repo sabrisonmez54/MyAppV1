@@ -102,8 +102,9 @@
                                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="s7M-s5-Sas">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
                                                         <subviews>
-                                                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="uU5-Kb-XlB">
+                                                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="linkedInresimim" translatesAutoresizingMaskIntoConstraints="NO" id="uU5-Kb-XlB">
                                                                 <rect key="frame" x="10" y="10" width="197" height="195"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
                                                                         <real key="value" value="0.25"/>
@@ -171,6 +172,7 @@
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstItem="3BK-JD-2DM" firstAttribute="width" secondItem="QQS-5f-DPC" secondAttribute="width" id="RGk-p0-9xz"/>
                                                                     <constraint firstItem="3BK-JD-2DM" firstAttribute="centerX" secondItem="OVN-0n-0rW" secondAttribute="centerX" id="iMK-fj-QSl"/>
@@ -179,6 +181,7 @@
                                                                 <edgeInsets key="layoutMargins" top="50" left="8" bottom="50" right="8"/>
                                                             </stackView>
                                                         </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="uU5-Kb-XlB" firstAttribute="centerY" secondItem="OVN-0n-0rW" secondAttribute="centerY" id="1CI-AB-Rc2"/>
                                                             <constraint firstItem="uU5-Kb-XlB" firstAttribute="centerY" secondItem="s7M-s5-Sas" secondAttribute="centerY" id="H9d-TC-doR"/>
@@ -234,16 +237,44 @@
                                                                                             <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
                                                                                         </imageView>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My profile" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rge-TN-ZHJ">
-                                                                                            <rect key="frame" x="20" y="20" width="264" height="33"/>
-                                                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                                                                            <rect key="frame" x="20" y="20" width="264" height="40"/>
+                                                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="29"/>
                                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                             <nil key="highlightedColor"/>
+                                                                                            <userDefinedRuntimeAttributes>
+                                                                                                <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor = UIColor.black.cgColor">
+                                                                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </userDefinedRuntimeAttribute>
+                                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                                                    <integer key="value" value="2"/>
+                                                                                                </userDefinedRuntimeAttribute>
+                                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                                                    <integer key="value" value="1"/>
+                                                                                                </userDefinedRuntimeAttribute>
+                                                                                                <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                                                    <size key="value" width="4" height="4"/>
+                                                                                                </userDefinedRuntimeAttribute>
+                                                                                            </userDefinedRuntimeAttributes>
                                                                                         </label>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A little bit about me" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RiM-yw-jqc">
                                                                                             <rect key="frame" x="20" y="203" width="264" height="25"/>
                                                                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                             <nil key="highlightedColor"/>
+                                                                                            <userDefinedRuntimeAttributes>
+                                                                                                <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor = UIColor.black.cgColor">
+                                                                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </userDefinedRuntimeAttribute>
+                                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                                                    <integer key="value" value="3"/>
+                                                                                                </userDefinedRuntimeAttribute>
+                                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                                                    <integer key="value" value="1"/>
+                                                                                                </userDefinedRuntimeAttribute>
+                                                                                                <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                                                    <size key="value" width="4" height="4"/>
+                                                                                                </userDefinedRuntimeAttribute>
+                                                                                            </userDefinedRuntimeAttributes>
                                                                                         </label>
                                                                                     </subviews>
                                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -353,7 +384,7 @@
                             <constraint firstAttribute="trailing" secondItem="B2f-0x-ZRa" secondAttribute="trailing" id="hbx-5Z-enT"/>
                             <constraint firstAttribute="bottom" secondItem="B2f-0x-ZRa" secondAttribute="bottom" id="sBA-Er-pYW"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="xqq-Kx-QSw"/>
+                        <viewLayoutGuide key="safeArea" id="woY-dI-0eY"/>
                     </view>
                     <size key="freeformSize" width="414" height="1276"/>
                     <connections>
@@ -361,9 +392,12 @@
                         <outlet property="cardCollectionView" destination="1f9-he-2nA" id="tzo-et-cXb"/>
                         <outlet property="cardView" destination="Aiz-gy-PGQ" id="KmQ-3R-hIc"/>
                         <outlet property="contentView" destination="0vb-hh-QSW" id="be0-fs-2CM"/>
+                        <outlet property="emailMeBtnOutlet" destination="QQS-5f-DPC" id="Gfm-Es-vwJ"/>
+                        <outlet property="headShotImg" destination="uU5-Kb-XlB" id="f1r-vc-doT"/>
                         <outlet property="mainView" destination="awo-fa-QjS" id="r9v-zy-Dex"/>
                         <outlet property="profileIconView" destination="Tak-Pr-39Y" id="PqX-te-UvI"/>
                         <outlet property="scrollView" destination="B2f-0x-ZRa" id="NNw-Oe-MGt"/>
+                        <outlet property="textMeBtnOutlet" destination="3BK-JD-2DM" id="Xw8-uD-XHX"/>
                         <outlet property="titleLbl" destination="9Vs-EP-kQh" id="K9j-Xd-4F8"/>
                         <segue destination="kui-Zv-CyB" kind="presentation" identifier="HomeToSection1" id="30v-Y7-P9C"/>
                         <segue destination="imd-3L-7D0" kind="presentation" identifier="HomeToSection2" id="0sl-ku-3me"/>
@@ -459,8 +493,8 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a Computer Science student at ..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zj-DF-5ew">
-                                                <rect key="frame" x="20" y="450" width="374" height="25"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                                <rect key="frame" x="20" y="450" width="374" height="26"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -995,6 +1029,6 @@
         <image name="626084" width="2560" height="1600"/>
         <image name="download" width="300" height="168"/>
         <image name="icons8-delete-64" width="48" height="48"/>
-        <image name="images" width="225" height="225"/>
+        <image name="linkedInresimim" width="2656" height="2775"/>
     </resources>
 </document>

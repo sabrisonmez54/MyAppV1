@@ -107,13 +107,13 @@
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                                        <real key="value" value="0.25"/>
+                                                                        <real key="value" value="0.5"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                                                        <integer key="value" value="10"/>
+                                                                        <integer key="value" value="20"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                                        <size key="value" width="0.0" height="0.0"/>
+                                                                        <size key="value" width="0.0" height="10"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </imageView>
@@ -131,7 +131,7 @@
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                                                <real key="value" value="0.25"/>
+                                                                                <real key="value" value="0.5"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
                                                                                 <integer key="value" value="20"/>
@@ -155,7 +155,7 @@
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                                                <real key="value" value="0.25"/>
+                                                                                <real key="value" value="0.5"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
                                                                                 <integer key="value" value="20"/>
@@ -706,8 +706,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAH-eZ-6qW">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VpY-RU-Zjf" userLabel="ContentView2">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VpY-RU-Zjf" userLabel="ContentView2">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVi-qe-oli">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="420"/>
@@ -774,15 +774,44 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzh-gi-Fvz">
+                                                <rect key="frame" x="20" y="549.5" width="374" height="30"/>
+                                                <color key="backgroundColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="View my resume file">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                        <real key="value" value="0.25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                        <size key="value" width="0.0" height="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="openPDFpressed:" destination="rTc-qV-b02" eventType="touchUpInside" id="srH-Y0-2El"/>
+                                                    <action selector="urlButtonPressed:" destination="imd-3L-7D0" eventType="touchUpInside" id="Gel-w6-LhI"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Fzh-gi-Fvz" secondAttribute="trailing" constant="20" id="5hd-Ht-20l"/>
+                                            <constraint firstItem="Fzh-gi-Fvz" firstAttribute="centerX" secondItem="VpY-RU-Zjf" secondAttribute="centerX" id="89O-cZ-dZP"/>
                                             <constraint firstAttribute="bottom" secondItem="iVi-qe-oli" secondAttribute="bottom" constant="476" id="9me-FL-ef0"/>
                                             <constraint firstItem="iVi-qe-oli" firstAttribute="centerX" secondItem="VpY-RU-Zjf" secondAttribute="centerX" id="COp-T6-daY"/>
                                             <constraint firstItem="gx9-2t-pIZ" firstAttribute="leading" secondItem="VpY-RU-Zjf" secondAttribute="leading" constant="20" id="D98-PR-ImD"/>
+                                            <constraint firstItem="Fzh-gi-Fvz" firstAttribute="top" secondItem="gx9-2t-pIZ" secondAttribute="bottom" constant="50" id="LCX-3P-JLb"/>
                                             <constraint firstItem="iVi-qe-oli" firstAttribute="leading" secondItem="VpY-RU-Zjf" secondAttribute="leading" id="iYU-OT-Hk4"/>
                                             <constraint firstItem="iVi-qe-oli" firstAttribute="top" secondItem="VpY-RU-Zjf" secondAttribute="top" id="ibR-4V-rHQ"/>
                                             <constraint firstAttribute="trailing" secondItem="gx9-2t-pIZ" secondAttribute="trailing" constant="20" id="knj-se-T9l"/>
+                                            <constraint firstItem="Fzh-gi-Fvz" firstAttribute="leading" secondItem="VpY-RU-Zjf" secondAttribute="leading" constant="20" id="mpZ-t8-85n"/>
                                             <constraint firstAttribute="trailing" secondItem="iVi-qe-oli" secondAttribute="trailing" id="owd-Vf-j7L"/>
                                             <constraint firstItem="gx9-2t-pIZ" firstAttribute="top" secondItem="iVi-qe-oli" secondAttribute="bottom" constant="30" id="xaU-8D-uAc"/>
                                         </constraints>

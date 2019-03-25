@@ -23,6 +23,7 @@
 		1EBC2CDA222EC5DF007EA798 /* 1607-computer-display.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EBC2CD9222EC5DF007EA798 /* 1607-computer-display.json */; };
 		1EBC2CDC222ED0D1007EA798 /* ThirdSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBC2CDB222ED0D1007EA798 /* ThirdSectionViewController.swift */; };
 		1EBC2CDE222EF67A007EA798 /* profile.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EBC2CDD222EF67A007EA798 /* profile.json */; };
+		1ECDCBDA2248660B00A85759 /* ResumePDF2019.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1ECDCBD92248660B00A85759 /* ResumePDF2019.pdf */; };
 		1EFBE42D223C4595007B331A /* 1606-profile.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EFBE42C223C4595007B331A /* 1606-profile.json */; };
 		1EFBE42F223C4650007B331A /* 4948-about.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EFBE42E223C4650007B331A /* 4948-about.json */; };
 		1EFBE433223C48B1007B331A /* 4067-profile.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EFBE432223C48B0007B331A /* 4067-profile.json */; };
@@ -48,6 +49,7 @@
 		1EBC2CD9222EC5DF007EA798 /* 1607-computer-display.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "1607-computer-display.json"; sourceTree = "<group>"; };
 		1EBC2CDB222ED0D1007EA798 /* ThirdSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdSectionViewController.swift; sourceTree = "<group>"; };
 		1EBC2CDD222EF67A007EA798 /* profile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = profile.json; sourceTree = "<group>"; };
+		1ECDCBD92248660B00A85759 /* ResumePDF2019.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ResumePDF2019.pdf; sourceTree = "<group>"; };
 		1EFBE42C223C4595007B331A /* 1606-profile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "1606-profile.json"; sourceTree = "<group>"; };
 		1EFBE42E223C4650007B331A /* 4948-about.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4948-about.json"; sourceTree = "<group>"; };
 		1EFBE432223C48B0007B331A /* 4067-profile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4067-profile.json"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		1EBC2CAF222CFB6C007EA798 /* NewMyApp */ = {
 			isa = PBXGroup;
 			children = (
+				1ECDCBD8224865F900A85759 /* PDF */,
 				1E5EF76F222F13AA007FA6C8 /* View */,
 				1EBC2CCF222E003B007EA798 /* 4583-mine.json */,
 				1EBC2CD5222E1127007EA798 /* 3179-code-icon.json */,
@@ -127,6 +130,14 @@
 				1EBC2CD7222EC210007EA798 /* FourthSectionViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		1ECDCBD8224865F900A85759 /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				1ECDCBD92248660B00A85759 /* ResumePDF2019.pdf */,
+			);
+			path = PDF;
 			sourceTree = "<group>";
 		};
 		560F226F06B72DA93C9BE8A9 /* Frameworks */ = {
@@ -206,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ECDCBDA2248660B00A85759 /* ResumePDF2019.pdf in Resources */,
 				1EBC2CD0222E003B007EA798 /* 4583-mine.json in Resources */,
 				1EBC2CDA222EC5DF007EA798 /* 1607-computer-display.json in Resources */,
 				1EBC2CD6222E1127007EA798 /* 3179-code-icon.json in Resources */,

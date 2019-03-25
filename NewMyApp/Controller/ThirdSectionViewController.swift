@@ -8,8 +8,9 @@
 
 import UIKit
 import Lottie
+import WebKit
 
-class ThirdSectionViewController: UIViewController {
+class ThirdSectionViewController: UIViewController, UIDocumentInteractionControllerDelegate {
 
     //Outlets
     @IBOutlet weak var animationContainerView: UIView!
@@ -17,7 +18,6 @@ class ThirdSectionViewController: UIViewController {
     @IBOutlet weak var bodyLbl: UILabel!
     
     var Title = "My Resume"
-    
     var body = "You can watch my video resume or take a look at the pdf file"
     
     override func viewDidLoad() {
@@ -48,5 +48,23 @@ class ThirdSectionViewController: UIViewController {
     
     @IBAction func closeBtnTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func documentInteractionControllerViewControllerForPreview(_ controller: UIDocumentInteractionController) -> UIViewController {
+        return self//or use return self.navigationController for fetching app navigation bar colour
+    }
+    
+    @IBAction func openPDFpressed(_ sender: Any) {
+//        let pdfFilePath = Bundle.main.url(forResource: "ResumePDF2019", withExtension: "pdf")
+//        let webView = WKWebView(frame: self.view.frame)
+//        let urlRequest = URLRequest.init(url: pdfFilePath!)
+//        webView.load(urlRequest)
+//        self.view.addSubview(webView)
+        
+        let path =  Bundle.main.path(forResource: "ResumePDF2019", ofType: ".pdf")!
+        let dc = UIDocumentInteractionController(url: URL(fileURLWithPath: path))
+        dc.delegate = self
+        dc.presentPreview(animated: true)
+    
     }
 }

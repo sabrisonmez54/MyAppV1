@@ -48,8 +48,7 @@ class ViewController: UIViewController {
             self.emailMeBtnOutlet.alpha = 1
             self.textMeBtnOutlet.alpha = 1
         }
-        
-      //  headShotImg.clipsToBounds = true
+        //  headShotImg.clipsToBounds = true
        // headShotImg.layer.cornerRadius = headShotImg.frame.width / 2
     }
 

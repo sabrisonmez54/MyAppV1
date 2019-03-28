@@ -799,10 +799,15 @@
                                                     <action selector="urlButtonPressed:" destination="imd-3L-7D0" eventType="touchUpInside" id="Gel-w6-LhI"/>
                                                 </connections>
                                             </button>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="tih-vb-y1w">
+                                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                                <color key="color" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </activityIndicatorView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Fzh-gi-Fvz" secondAttribute="trailing" constant="20" id="5hd-Ht-20l"/>
+                                            <constraint firstItem="tih-vb-y1w" firstAttribute="centerX" secondItem="VpY-RU-Zjf" secondAttribute="centerX" id="6j3-4T-NCV"/>
                                             <constraint firstItem="Fzh-gi-Fvz" firstAttribute="centerX" secondItem="VpY-RU-Zjf" secondAttribute="centerX" id="89O-cZ-dZP"/>
                                             <constraint firstAttribute="bottom" secondItem="iVi-qe-oli" secondAttribute="bottom" constant="476" id="9me-FL-ef0"/>
                                             <constraint firstItem="iVi-qe-oli" firstAttribute="centerX" secondItem="VpY-RU-Zjf" secondAttribute="centerX" id="COp-T6-daY"/>
@@ -810,6 +815,7 @@
                                             <constraint firstItem="Fzh-gi-Fvz" firstAttribute="top" secondItem="gx9-2t-pIZ" secondAttribute="bottom" constant="50" id="LCX-3P-JLb"/>
                                             <constraint firstItem="iVi-qe-oli" firstAttribute="leading" secondItem="VpY-RU-Zjf" secondAttribute="leading" id="iYU-OT-Hk4"/>
                                             <constraint firstItem="iVi-qe-oli" firstAttribute="top" secondItem="VpY-RU-Zjf" secondAttribute="top" id="ibR-4V-rHQ"/>
+                                            <constraint firstItem="tih-vb-y1w" firstAttribute="centerY" secondItem="VpY-RU-Zjf" secondAttribute="centerY" id="jCg-We-xKG"/>
                                             <constraint firstAttribute="trailing" secondItem="gx9-2t-pIZ" secondAttribute="trailing" constant="20" id="knj-se-T9l"/>
                                             <constraint firstItem="Fzh-gi-Fvz" firstAttribute="leading" secondItem="VpY-RU-Zjf" secondAttribute="leading" constant="20" id="mpZ-t8-85n"/>
                                             <constraint firstAttribute="trailing" secondItem="iVi-qe-oli" secondAttribute="trailing" id="owd-Vf-j7L"/>
@@ -839,6 +845,7 @@
                     <connections>
                         <outlet property="animationContainerView" destination="iVi-qe-oli" id="Khs-nv-u7a"/>
                         <outlet property="bodyLbl" destination="gx9-2t-pIZ" id="UoR-iZ-ZIx"/>
+                        <outlet property="spinner" destination="tih-vb-y1w" id="uW1-Us-gMa"/>
                         <outlet property="titleLbl" destination="ccf-Re-eoG" id="Y0k-12-BLF"/>
                     </connections>
                 </viewController>
